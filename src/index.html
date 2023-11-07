@@ -2,10 +2,70 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <title>League of Legends</title>
+    <link rel="shortcut icon" href="https://c0.klipartz.com/pngpicture/1016/1000/gratis-png-liga-de-leyendas-iconos-de-computadora-ongamenet-starleague-videojuego-deportes-electronicos-voz-actor.png">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <div>
+        <img class="lol" src="https://www.dafont.com/forum/attach/orig/4/8/48913.png" alt="League of Legends">
+      </div> 
+      <div class="botones">
+        <div class="buscar" id="input-buscar">
+          <label></label>
+            <input
+            type="text"
+            id="buscarCampeones"
+            placeholder="Campeones"
+            required
+            >          
+          <img class="lupa" src="https://icones.pro/wp-content/uploads/2021/03/symbole-de-zoom-de-la-loupe-jaune.png" alt="lupa">
+        </div>
+        <label>
+          <select name="rol" data-testid="select-filter">Rol
+            <option value="todos">Rol</option>
+            <option value="Assassin">Asesinos</option>
+            <option value="Fighter">Luchadores</option>
+            <option value="Mage">Hechiceros</option>
+            <option value="Support">Soporte</option>
+            <option value="Tank">Tanques</option>
+          </select>
+        </label>
+        <label>
+          <select name="dificultad" data-testid="select-filter2">Dificultad
+            <option value="todos">Dificultad</option>
+            <option value="baja">Baja</option>
+            <option value="media">Media</option>
+            <option value="alta">Alta</option>
+          </select>
+        </label>
+        <label>
+          <select name="ordenarNombre" data-testid="select-sort">Ordenar por nombre
+            <option value="todos">Todos</option>
+            <option value="asc">A-Z</option>
+            <option value="desc">Z-A</option>
+          </select>
+        </label>
+        <button id="cleanButton" data-testid="button-clear">Limpiar</button>
+      </div>
+    </header>
+    <main>
+      <div class="bloqueTarjetas" id="bloqueTarjetas">
+      </div>
+      <div id="root" class="lol-cards-container"></div>
+    </main>
+    
+    <div>
+      <footer>
+        <p> Ana Contreras</p>
+      </footer>
+    </div>
     <script src="main.js" type="module"></script>
   </body>
 </html>
+<li>
+  <ul></ul>
+</li>
+
+
